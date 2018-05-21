@@ -15,6 +15,7 @@
 		079BE0FA20B266FA001F77F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 079BE0F920B266FA001F77F7 /* main.m */; };
 		079BE10420B266FB001F77F7 /* TestCocoapodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079BE10320B266FB001F77F7 /* TestCocoapodsTests.m */; };
 		079BE10F20B266FB001F77F7 /* TestCocoapodsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079BE10E20B266FB001F77F7 /* TestCocoapodsUITests.m */; };
+		079BE11F20B267C2001F77F7 /* UIFont+swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 079BE11E20B267C2001F77F7 /* UIFont+swizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		079BE10A20B266FB001F77F7 /* TestCocoapodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCocoapodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		079BE10E20B266FB001F77F7 /* TestCocoapodsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCocoapodsUITests.m; sourceTree = "<group>"; };
 		079BE11020B266FB001F77F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079BE11D20B267C2001F77F7 /* UIFont+swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+swizzle.h"; sourceTree = "<group>"; };
+		079BE11E20B267C2001F77F7 /* UIFont+swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+swizzle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				079BE0E920B266FA001F77F7 /* TestCocoapods */,
+				079BE11C20B26764001F77F7 /* UIFont+Swizzle */,
 				079BE10220B266FB001F77F7 /* TestCocoapodsTests */,
 				079BE10D20B266FB001F77F7 /* TestCocoapodsUITests */,
 				079BE0E820B266FA001F77F7 /* Products */,
@@ -130,6 +134,15 @@
 				079BE11020B266FB001F77F7 /* Info.plist */,
 			);
 			path = TestCocoapodsUITests;
+			sourceTree = "<group>";
+		};
+		079BE11C20B26764001F77F7 /* UIFont+Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				079BE11D20B267C2001F77F7 /* UIFont+swizzle.h */,
+				079BE11E20B267C2001F77F7 /* UIFont+swizzle.m */,
+			);
+			path = "UIFont+Swizzle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +281,7 @@
 				079BE0EF20B266FA001F77F7 /* ViewController.m in Sources */,
 				079BE0FA20B266FA001F77F7 /* main.m in Sources */,
 				079BE0EC20B266FA001F77F7 /* AppDelegate.m in Sources */,
+				079BE11F20B267C2001F77F7 /* UIFont+swizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
